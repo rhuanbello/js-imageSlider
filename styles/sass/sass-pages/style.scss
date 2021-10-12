@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    overflow-y: hidden;
+
+}
+
+.slideShow-container {
+    margin: 120px auto 0px auto;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+  
+
+    .mySlides {
+        height: 500px;
+        width: 100%;
+        background-color: red;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        background-size: cover;
+        border-radius: 200px;
+
+        &.div1 {
+            background: url('https://picsum.photos/1200/500?random=1') center;
+         
+        }
+        &.div2 {
+            background: url('https://picsum.photos/1200/500?random=2') center;
+         
+        }
+        &.div3 {
+            background: url('https://picsum.photos/1200/500?random=3') center;
+         
+        }
+        &.div4 {
+            background: url('https://picsum.photos/1200/500?random=4') center;
+         
+        }
+        &.div5 {
+            background: url('https://picsum.photos/1200/500?random=5') center;
+         
+        }
+        &.div6 {
+            background: url('https://picsum.photos/1200/500?random=6') center;
+         
+        }
+        &.div7 {
+            background: url('https://picsum.photos/1200/500?random=7') center;
+         
+        }
+        &.div8 {
+            background: url('https://picsum.photos/1200/500?random=8') center;
+         
+        }
+
+
+        &.fade {
+            animation: fade 1s;
+
+        }
+
+    }
+
+    a.prev, a.next {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        top: 50%;
+        color: #fff;
+        padding-inline: 24px;
+        font-weight: 600;
+        font-size: 18px;
+        transform: translateY(-50%);
+        transition: .2s ease-in-out;
+        height: 1000%;
+        display: flex;
+        align-items: center;
+        border-radius: 0px;
+        
+    
+    }
+    
+    a.prev {
+        left: 0;
+    
+    }
+    
+    a.next {
+        right: 0;
+    }
+
+}
+
+.dots-container {
+
+    text-align: center;
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 2px;
+        display: inline-block;
+        margin-top: 5px;
+        transition: .3s;
+
+        &:hover {
+            background-color: #5e5e5e;
+        }
+        
+        &.active {
+            background-color: #5e5e5e;
+
+        }
+
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+    
+}
